@@ -1,0 +1,7 @@
+
+
+[template.git]
+destination = "~/test"
+
+[template.tmux]
+destination = "~/test"
