@@ -5,7 +5,9 @@ noremap <left> <nop>
 noremap <right> <nop>
 
 " Line numbers
-:set number relativenumber
+set number relativenumber
+
+colorscheme base16-woodland
 
 " Show tabs
 set list
