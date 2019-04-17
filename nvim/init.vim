@@ -1,12 +1,17 @@
-
+" No arrow keys
 noremap <up> <nop>
+noremap! <up> <nop>
 noremap <down> <nop>
+noremap! <down> <nop>
 noremap <left> <nop>
+noremap! <left> <nop>
 noremap <right> <nop>
+noremap! <right> <nop>
 
 " Line numbers
 set number relativenumber
 
+" Colors
 colorscheme base16-woodland
 
 " Show tabs
