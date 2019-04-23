@@ -1,3 +1,12 @@
+" Plugins
+call plug#begin('~/.local/share/nvim/plugged')
+
+Plug 'vimwiki/vimwiki'
+Plug 'itchyny/lightline.vim'
+Plug 'cespare/vim-toml'
+
+call plug#end()
+
 " No arrow keys
 noremap <up> <nop>
 noremap! <up> <nop>
