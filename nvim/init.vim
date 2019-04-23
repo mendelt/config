@@ -1,7 +1,6 @@
 " Plugins
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'vimwiki/vimwiki'
 Plug 'itchyny/lightline.vim'
 Plug 'cespare/vim-toml'
 
