@@ -5,8 +5,11 @@ Plug 'itchyny/lightline.vim'
 Plug 'cespare/vim-toml'
 Plug 'mmai/vim-markdown-wiki'
 Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
+
+map <C-n> :NERDTreeToggle<CR>
 
 " No arrow keys
 noremap <up> <nop>
