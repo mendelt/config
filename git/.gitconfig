@@ -1,6 +1,9 @@
 [user]
-	# email = msiebenga@gmail.com
-	# name = Mendelt Siebenga
+	email = msiebenga@gmail.com
+	name = Mendelt Siebenga
+
+[core]
+	excludesfile = /home/mendelt/.config/git/gitignore_global
 
 [alias]
 	co = checkout
