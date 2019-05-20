@@ -8,3 +8,5 @@
 [alias]
 	co = checkout
 
+[pull]
+	rebase = true
