@@ -40,75 +40,44 @@ font:
     x: 0
     y: 0
 
-# If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: false
 
-# Base16 Synth Midnight Dark - alacritty color config
-# Michaël Ball (http://github.com/michael-ball/)
+# Base16 Atelier Dune - alacritty color config
+# Bram de Haan (http://atelierbramdehaan.nl)
 colors:
-  # Default colors
   primary:
-    background: '0x040404'
-    foreground: '0xdfdbdf'
+    background: '0x20201d'
+    foreground: '0xa6a28c'
 
-  # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x040404'
-    cursor: '0xdfdbdf'
+    text: '0x20201d'
+    cursor: '0xa6a28c'
 
-  # Normal colors
   normal:
-    black:   '0x040404'
-    red:     '0xb53b50'
-    green:   '0x06ea61'
-    yellow:  '0xdae84d'
-    blue:    '0x03aeff'
-    magenta: '0xea5ce2'
-    cyan:    '0x7cede9'
-    white:   '0xdfdbdf'
+    black:   '0x20201d'
+    red:     '0xd73737'
+    green:   '0x60ac39'
+    yellow:  '0xae9513'
+    blue:    '0x6684e1'
+    magenta: '0xb854d4'
+    cyan:    '0x1fad83'
+    white:   '0xa6a28c'
 
-  # Bright colors
   bright:
-    black:   '0x61507a'
-    red:     '0xe4600e'
-    green:   '0x141414'
-    yellow:  '0x242424'
-    blue:    '0xbfbbbf'
-    magenta: '0xefebef'
-    cyan:    '0x9d4d0e'
-    white:   '0xfffbff'
+    black:   '0x7d7a68'
+    red:     '0xb65611'
+    green:   '0x292824'
+    yellow:  '0x6e6b5e'
+    blue:    '0x999580'
+    magenta: '0xe8e4cf'
+    cyan:    '0xd43552'
+    white:   '0xfefbec'
 
-
-# Visual Bell
-#
-# Any time the BEL code is received, Alacritty "rings" the visual bell. Once
-# rung, the terminal background will be set to white and transition back to the
-# default background color. You can control the rate of this transition by
-# setting the `duration` property (represented in milliseconds). You can also
-# configure the transition function by setting the `animation` property.
-#
-# Values for `animation`:
-#   - Ease
-#   - EaseOut
-#   - EaseOutSine
-#   - EaseOutQuad
-#   - EaseOutCubic
-#   - EaseOutQuart
-#   - EaseOutQuint
-#   - EaseOutExpo
-#   - EaseOutCirc
-#   - Linear
-#
-# Specifying a `duration` of `0` will disable the visual bell.
 visual_bell:
   animation: EaseOutExpo
   duration: 100
   color: '0x662222'
 
-# Background opacity
-#
-# Window opacity as a floating point number from `0.0` to `1.0`.
-# The value `0.0` is completely transparent and `1.0` is opaque.
 background_opacity: 1.0
 
 # Mouse bindings
