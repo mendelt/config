@@ -30,7 +30,7 @@ font:
     family: monospace
     style: Italic
 
-  size: 10.0
+  size: 14.0
 
   offset:
     x: 0
