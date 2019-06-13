@@ -1,6 +1,10 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
 window:
+  padding:
+    x: 4
+    y: 4
+
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: true
 
