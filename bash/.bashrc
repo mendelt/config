@@ -17,7 +17,7 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-PS1='\e[34m\u\e[35m@\e[31m\h\e[33m:\e[32m\w\e[37m\$ '
+PS1='\[\e[34m\]\u\[\e[35m\]@\[\e[31m\]\h\[\e[33m\]:\[\e[32m\]\w\$\[\e[37m\] '
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
