@@ -50,15 +50,15 @@ draw_bold_text_with_bright_colors: false
 # Bram de Haan (http://atelierbramdehaan.nl)
 colors:
   primary:
-    background: '0x20201d'
+    background: '0x000000'
     foreground: '0xa6a28c'
 
   cursor:
-    text: '0x20201d'
+    text: '0x000000'
     cursor: '0xa6a28c'
 
   normal:
-    black:   '0x20201d'
+    black:   '0x000000'
     red:     '0xd73737'
     green:   '0x60ac39'
     yellow:  '0xae9513'
