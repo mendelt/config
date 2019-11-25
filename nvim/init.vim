@@ -3,7 +3,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'itchyny/lightline.vim'
 Plug 'cespare/vim-toml'
-Plug 'mmai/vim-markdown-wiki'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdtree'
 
