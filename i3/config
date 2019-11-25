@@ -8,8 +8,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # Special gaps features
-gaps inner 10
-gaps outer 0
+smart_borders on
+for_window [class=".*"] border pixel 0
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
