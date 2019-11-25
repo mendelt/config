@@ -23,9 +23,6 @@ noremap! <right> <nop>
 " Line numbers
 set number relativenumber
 
-" Colors
-colorscheme base16-woodland
-
 " Show tabs
 set list
 set listchars=tab:>-
