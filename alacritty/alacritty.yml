@@ -8,7 +8,6 @@ window:
 scrolling:
   history: 10000
   multiplier: 3
-  faux_multiplier: 3
 
   # Scroll to the bottom when new text is written to the terminal.
   auto_scroll: false
