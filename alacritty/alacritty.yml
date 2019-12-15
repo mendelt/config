@@ -19,19 +19,19 @@ tabspaces: 4
 font:
   # Normal (roman) font face
   normal:
-    family: monospace
+    family: inconsolata
     style: Regular
 
   # Bold font face
   bold:
-    family: monospace
+    family: inconsolata
     style: Bold
 
   italic:
-    family: monospace
+    family: inconsolata
     style: Italic
 
-  size: 11.0
+  size: 10.0
 
   offset:
     x: 0
