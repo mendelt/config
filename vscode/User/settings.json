@@ -1,0 +1,9 @@
+{
+    "rust-client.enableMultiProjectSetup": true,
+    "editor.fontSize": 20,
+    "editor.fontFamily": "'Inconsolata'",
+    "editor.fontWeight": "300",
+    "customizeUI.activityBar": "bottom",
+    "customizeUI.font.monospace": "Droid Sans",
+    "customizeUI.font.regular": "Droid Sans "
+}
