@@ -3,6 +3,7 @@
     "editor.fontSize": 15,
     "editor.fontFamily": "'Inconsolata'",
     "editor.fontWeight": "300",
+    "editor.rulers": [100,120],
     "files.autoSave": "afterDelay",
     "window.zoomLevel": 1
 }
