@@ -9,8 +9,6 @@ scrolling:
   history: 10000
   multiplier: 3
 
-tabspaces: 4
-
 # Font configuration (changes require restart)
 font:
   # Normal (roman) font face
