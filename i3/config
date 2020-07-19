@@ -36,6 +36,9 @@ bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
 
+# Move workspace to next monitor
+bindsym $mod+x move workspace to output left
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
