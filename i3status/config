@@ -16,7 +16,6 @@ order += "wireless _first_"
 order += "ethernet _first_"
 order += "battery all"
 order += "disk /"
-order += "load"
 order += "cpu_usage"
 order += "cpu_temperature 0"
 order += "memory"
@@ -39,10 +38,6 @@ battery all {
 
 disk "/" {
     format = "%avail"
-}
-
-load {
-  format = "%1min"
 }
 
 cpu_usage {
