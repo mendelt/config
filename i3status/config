@@ -49,10 +49,6 @@ cpu_temperature 0 {
   max_threshold = "65"
 }
 
-disk "/" {
-  format = " %free %avail"
-}
-
 memory {
     format = "%used of %available"
     threshold_degraded = "1G"
