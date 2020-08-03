@@ -60,6 +60,9 @@ alias gitu='git add . && git commit && git push'
 alias ll='ls -alsF'
 alias vim='nvim'
 
+alias ec="$EDITOR $HOME/.zshrc"
+alias sc="source $HOME/.zshrc"
+
 # Theming section  
 autoload -U compinit colors zcalc
 compinit -d
