@@ -199,3 +199,7 @@ case $(basename "$(cat "/proc/$PPID/comm")") in
   		ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
     ;;
 esac
+
+# Load aliasses from separate file
+source $HOME/.aliases
+
