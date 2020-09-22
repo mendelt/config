@@ -21,7 +21,16 @@ cpu_usage {
 }
 
 battery all {
-    format = " %status %percentage %remaining"
+    format = " BAT %status %percentage %remaining "
+    format_down = " BAT - "
+    last_full_capacity = true
+    integer_battery_capacity = true
+    status_chr = "⚡"
+    status_bat = ""
+    status_unk = ""
+    status_full = "☻"
+    low_threshold = 15
+    threshold_type = time
 }
 
 disk "/" {
