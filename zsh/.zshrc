@@ -201,5 +201,5 @@ case $(basename "$(cat "/proc/$PPID/comm")") in
 esac
 
 # Load aliasses from separate file
-source $HOME/.aliases
+source $HOME/config/zsh/.aliases
 
