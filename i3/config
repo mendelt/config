@@ -11,6 +11,7 @@ hide_edge_borders none
 font pango:Terminus 11
 default_border pixel 1
 default_floating_border normal
+hide_edge_borders smart_no_gaps
 
 
 #          === Execute on startup ===
