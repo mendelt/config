@@ -28,7 +28,6 @@ bindsym $mod+Return exec alacritty
 
 # Kill focused window
 bindsym $mod+q kill
-bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # Start i3-dmenu-desktop
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
@@ -38,19 +37,14 @@ bindsym $mod+m bar mode toggle
 
 # Audio shortcuts
 bindsym $mod+Ctrl+m exec pavucontrol
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%; notify-send 'volume up'
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10%; notify-send 'volume down'
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle; notify-send 'toggle mute'
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle; notify-send 'toggle mic'
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%; exec notify-send 'volume up'
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10%; exec notify-send 'volume down'
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle; exec notify-send 'toggle mute'
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle; exec notify-send 'toggle mic'
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5; notify-send 'brightness up'"
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5; notify-send 'brightness down'"
-
-# Print Screen
-bindsym Print exec --no-startup-id i3-scrot
-bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
-bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5; exec notify-send 'brightness up'
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5; exec notify-send 'brightness down'
 
 # change focus
 bindsym $mod+h focus left
@@ -67,11 +61,17 @@ bindsym $mod+Shift+l move right
 # move workspace to next monitor
 bindsym $mod+x move workspace to output left
 
+# split orientation
+bindsym $mod+backslash split h;exec notify-send 'tile horizontally'
+bindsym $mod+bar split v;exec notify-send 'tile vertically'
+
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
-# toggle container layout (horiz split, vert split, tabbed)
-bindsym $mod+s layout toggle splitv splith tabbed;exec notify-send 'layout $layout'
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -82,12 +82,8 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
-# move the currently focused window to the scratchpad
-bindsym $mod+Shift+minus move scratchpad
-
-# Show the next scratchpad window or hide the focused scratchpad window.
-# If there are multiple scratchpad windows, this command cycles through them.
-bindsym $mod+minus scratchpad show
+# focus the child container
+#bindsym $mod+d focus child
 
 # Workspace names
 set $ws1 "1"
