@@ -49,6 +49,11 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5; exec notify-send 'brightness up'
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5; exec notify-send 'brightness down'
 
+# Print Screen
+bindsym Print exec --no-startup-id i3-scrot
+bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
+bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
