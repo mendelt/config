@@ -54,6 +54,9 @@ bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 
+# Start Applications
+bindsym $mod+e exec pcmanfm
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
