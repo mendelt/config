@@ -30,6 +30,7 @@ bindsym $mod+Return exec alacritty
 
 # Kill focused window
 bindsym $mod+q kill
+bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # Start i3-dmenu-desktop
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
