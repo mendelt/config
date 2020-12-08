@@ -153,28 +153,9 @@ cursor:
 # Live config reload (changes require restart)
 live_config_reload: true
 
-# Shell
-#
-# You can set `shell.program` to the path of your favorite shell, e.g. `/bin/fish`.
-# Entries in `shell.args` are passed unmodified as arguments to the shell.
-#
-# Default:
-#   - (Linux/macOS) /bin/bash --login
-#   - (Windows) powershell
 shell:
   program: /bin/tmux
-#  args:
-#    - --login
 
-# Windows 10 ConPTY backend (Windows only)
-#
-# This will enable better color support and may resolve other issues,
-# however this API and its implementation is still young and so is
-# disabled by default, as stability may not be as good as the winpty
-# backend.
-#
-# Alacritty will fall back to the WinPTY automatically if the ConPTY
-# backend cannot be initialized.
 enable_experimental_conpty_backend: false
 
 # Send ESC (\x1b) before characters when alt is pressed.
