@@ -38,6 +38,7 @@ exec --no-startup-id blueman-applet
 
 # Start Applications
 bindsym $mod+Return exec alacritty
+bindsym $mod+e exec pcmanfm
 
 # Kill focused window
 bindsym $mod+q kill
@@ -65,9 +66,6 @@ bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 
-# Start Applications
-bindsym $mod+e exec pcmanfm
-
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -80,8 +78,11 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-# move workspace to next monitor
-bindsym $mod+x move workspace to output left
+# move workspaces between monitors
+bindsym $mod+Ctrl+h move workspace to output left
+bindsym $mod+Ctrl+j move workspace to output down
+bindsym $mod+Ctrl+k move workspace to output up
+bindsym $mod+Ctrl+l move workspace to output right
 
 # toggle fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
