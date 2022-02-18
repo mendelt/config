@@ -8,6 +8,8 @@ window:
   # Allow terminal applications to change Alacritty's window title.
   dynamic_title: true
 
+  opacity: 1.0
+
 scrolling:
   history: 10000
   multiplier: 3
@@ -76,8 +78,6 @@ bell:
   duration: 40
   color: '0x662222'
 
-background_opacity: 1.0
-
 # Mouse bindings
 #
 # Available fields:
@@ -113,7 +113,6 @@ selection:
 
   # When set to `true`, selected text will be copied to the primary clipboard.
   save_to_clipboard: false
-
 
 cursor:
   # Cursor style
