@@ -5,42 +5,9 @@ window:
     x: 2
     y: 2
 
-  # Allow terminal applications to change Alacritty's window title.
-  dynamic_title: true
-
-  opacity: 1.0
-
 scrolling:
   history: 10000
   multiplier: 3
-
-# Font configuration (changes require restart)
-font:
-  # Normal (roman) font face
-  normal:
-    family: inconsolata
-    style: Regular
-
-  # Bold font face
-  bold:
-    family: inconsolata
-    style: Bold
-
-  italic:
-    family: inconsolata
-    style: Italic
-
-  size: 12.0
-
-  offset:
-    x: 0
-    y: 0
-
-  glyph_offset:
-    x: 0
-    y: 0
-
-draw_bold_text_with_bright_colors: false
 
 # Base16 Atelier Dune - alacritty color config
 # Bram de Haan (http://atelierbramdehaan.nl)
@@ -77,24 +44,6 @@ bell:
   animation: EaseOutExpo
   duration: 40
   color: '0x662222'
-
-# Mouse bindings
-#
-# Available fields:
-#   - mouse
-#   - action
-#   - mods (optional)
-#
-# Values for `mouse`:
-#   - Middle
-#   - Left
-#   - Right
-#   - Numeric identifier such as `5`
-#
-# All available `mods` and `action` values are documented in the key binding
-# section.
-mouse_bindings:
-  - { mouse: Middle, action: PasteSelection }
 
 mouse:
   # Click settings
