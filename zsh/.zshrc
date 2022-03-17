@@ -55,12 +55,8 @@ bindkey '^[[Z' undo                                             # Shift+tab undo
 alias cp="cp -i"                                                # Confirm before overwriting something
 alias df='df -h'                                                # Human-readable sizes
 alias free='free -m'                                            # Show sizes in MB
-alias gitu='git add . && git commit && git push'
 alias ll='ls -alsF'
 alias vim='nvim'
-
-alias ec="$EDITOR $HOME/.zshrc"
-alias sc="source $HOME/.zshrc"
 
 # Theming section  
 autoload -U compinit colors zcalc
@@ -167,7 +163,4 @@ case $(basename "$(cat "/proc/$PPID/comm")") in
   		ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
     ;;
 esac
-
-# Load aliasses from separate file
-source $HOME/config/zsh/.aliases
 
