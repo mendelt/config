@@ -76,9 +76,7 @@ colors
 setopt prompt_subst
 
 # Maia prompt
-PROMPT="%B%{$fg[cyan]%}%(4~|%-1~/.../%2~|%~)%u%b >%{$fg[cyan]%}>%B%(?.%{$fg[cyan]%}.%{$fg[red]%})>%{$reset_color%}%b " # Print some system information when the shell is first started
-# Print a greeting message when shell is started
-echo $USER@$HOST  $(uname -srm) $(lsb_release -rcs)
+PROMPT="%B%{$fg[cyan]%}%(4~|%-1~/.../%2~|%~)%u%b >%{$fg[cyan]%}>%B%(?.%{$fg[cyan]%}.%{$fg[red]%})>%{$reset_color%}%b "
 
 # Modify the colors and symbols in these variables as desired.
 GIT_PROMPT_SYMBOL="%{$fg[blue]%}±"                              # plus/minus     - clean repo
@@ -136,6 +134,8 @@ git_prompt_string() {
   [ ! -n "$git_where" ] && echo "%{$fg[red]%} %(?..[%?])"
 }
 
+RPROMPT='$(git_prompt_string)'
+
 # Color man pages
 export LESS_TERMCAP_mb=$'\E[01;32m'
 export LESS_TERMCAP_md=$'\E[01;32m'
@@ -146,26 +146,9 @@ export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;36m'
 export LESS=-r
 
-## Plugins section: Enable fish style features
-# Use syntax highlighting
-# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# Use history substring search
-# source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
-# bind UP and DOWN arrow keys to history substring search
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
 bindkey '^[[A' history-substring-search-up			
 bindkey '^[[B' history-substring-search-down
-
-# Apply different settigns for different terminals
-case $(basename "$(cat "/proc/$PPID/comm")") in
-  login)
-    	RPROMPT="%{$fg[red]%} %(?..[%?])" 
-    	alias x='startx ~/.xinitrc'      # Type name of desired desktop after x, xinitrc is configured for it
-    ;;
-  *)
-        RPROMPT='$(git_prompt_string)'
-    ;;
-esac
 
