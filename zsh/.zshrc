@@ -3,6 +3,7 @@ source $HOME/config/zsh/antigen.zsh
 
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
+antigen bundle zsh-users/zsh-autosuggestions
 
 antigen apply
 
@@ -165,10 +166,6 @@ case $(basename "$(cat "/proc/$PPID/comm")") in
     ;;
   *)
         RPROMPT='$(git_prompt_string)'
-		# Use autosuggestion
-		source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-		ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
-  		ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
     ;;
 esac
 
