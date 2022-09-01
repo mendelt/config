@@ -45,6 +45,20 @@ bell:
   duration: 40
   color: '0x662222'
 
+font:
+  normal:
+    family: "Hack Nerd Font"
+    style: regular
+  bold:
+    family: "Hack Nerd Font"
+    style: bold
+  italic:
+    family: "Hack Nerd Font"
+    style: italic
+  bold_italic:
+    family: "Hack Nerd Font"
+    style: bold italic
+
 mouse:
   # Click settings
   #
