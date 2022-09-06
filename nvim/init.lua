@@ -6,4 +6,5 @@ require "user.colorscheme"
 -- Per plugin config
 require "user.nvim-tree"
 require "user.treesitter"
+require "user.toggleterm"
 
