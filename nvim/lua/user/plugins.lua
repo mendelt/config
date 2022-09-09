@@ -5,6 +5,11 @@ return require('packer').startup(function(use)
     use "savq/melange"
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
+    -- lsp
+    use 'williamboman/mason.nvim'
+    use 'williamboman/mason-lspconfig.nvim'
+    use 'neovim/nvim-lspconfig'
+
     -- File explorer
     use { 'kyazdani42/nvim-tree.lua', requires = { 'kyazdani42/nvim-web-devicons' } }
 
