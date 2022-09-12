@@ -13,7 +13,6 @@ local tree_cb = nvim_tree_config.nvim_tree_callback
 nvim_tree.setup {
     update_focused_file = {
         enable = true,
-        update_cwd = true,
     },
     renderer = {
         root_folder_modifier = ":t",
@@ -56,6 +55,7 @@ nvim_tree.setup {
     },
     view = {
         adaptive_size = true,
+        hide_root_folder = true,
         side = "left",
         mappings = {
             list = {
