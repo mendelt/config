@@ -31,6 +31,6 @@ return require('packer').startup(function(use)
     use 'rafamadriz/friendly-snippets'
 
     -- toggleterm
-    use({ "akinsho/toggleterm.nvim", commit = "aaeed9e02167c5e8f00f25156895a6fd95403af8" })
+    use "akinsho/toggleterm.nvim"
 end)
 
