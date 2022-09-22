@@ -1,5 +1,8 @@
-mason = require("mason")
+require("mason").setup()
+require("mason-lspconfig").setup({
+    ensure_installed = { "sumneko_lua", "rust_analyzer" }
+})
+
 lspconfig = require("lspconfig")
 
-mason.setup()
 lspconfig["rust_analyzer"].setup {}
