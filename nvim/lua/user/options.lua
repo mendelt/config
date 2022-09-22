@@ -29,3 +29,10 @@ vim.opt.wrap = false
 -- vim.opt.scrolloff = 8
 -- vim.opt.sidescrolloff = 8
 
+vim.diagnostic.config({
+    virtual_text = true,
+    signs = true,
+    underline = true,
+    update_in_insert = true,
+    severity_sort = false,
+})
