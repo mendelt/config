@@ -2,10 +2,12 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
     use "wbthomason/packer.nvim"
-    use "savq/melange"
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+    use "nvim-lua/plenary.nvim"
     use 'nvim-lualine/lualine.nvim'
 
+    -- Color scheme
+    use "savq/melange"
     -- lsp
     use 'williamboman/mason.nvim'
     use 'williamboman/mason-lspconfig.nvim'
