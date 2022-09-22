@@ -4,6 +4,7 @@ return require('packer').startup(function(use)
     use "wbthomason/packer.nvim"
     use "savq/melange"
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+    use 'nvim-lualine/lualine.nvim'
 
     -- lsp
     use 'williamboman/mason.nvim'
