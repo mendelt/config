@@ -1,6 +1,7 @@
 local cmp = require("cmp")
 local luasnip = require("luasnip")
 
+require("crates").setup({})
 require("luasnip/loaders/from_vscode").lazy_load()
 
 --   פּ ﯟ   some other good icons
@@ -108,6 +109,7 @@ cmp.setup {
         { name = 'nvim_lua', keyword_length = 2},       -- complete neovim's Lua runtime API such vim.lsp.*
         { name = 'buffer', keyword_length = 2 },        -- source current buffer
         { name = 'luasnip', keyword_length = 2 },       -- nvim-cmp source for vim-vsnip
+        { name = "crates" },
     },
     confirm_opts = {
         behavior = cmp.ConfirmBehavior.Replace,
