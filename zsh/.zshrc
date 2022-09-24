@@ -35,6 +35,7 @@ WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider
 
 ## Keybindings section
 bindkey -e
+bindkey -v
 bindkey '^[[7~' beginning-of-line                               # Home key
 bindkey '^[[H' beginning-of-line                                # Home key
 if [[ "${terminfo[khome]}" != "" ]]; then
@@ -60,14 +61,14 @@ bindkey '^[[1;5C' forward-word                                  #
 bindkey '^H' backward-kill-word                                 # delete previous word with ctrl+backspace
 bindkey '^[[Z' undo                                             # Shift+tab undo last action
 
-## Alias section 
+## Alias section
 alias cp="cp -i"                                                # Confirm before overwriting something
 alias df='df -h'                                                # Human-readable sizes
 alias free='free -m'                                            # Show sizes in MB
 alias ll='ls -alsF'
 alias vim='nvim'
 
-# Theming section  
+# Theming section
 autoload -U compinit colors zcalc
 compinit -d
 colors
@@ -126,10 +127,10 @@ parse_git_state() {
 
 git_prompt_string() {
   local git_where="$(parse_git_branch)"
-  
+
   # If inside a Git repository, print its branch and state
   [ -n "$git_where" ] && echo "$GIT_PROMPT_SYMBOL$(parse_git_state)$GIT_PROMPT_PREFIX%{$fg[yellow]%}${git_where#(refs/heads/|tags/)}$GIT_PROMPT_SUFFIX"
-  
+
   # If not inside the Git repo, print exit codes of last command (only if it failed)
   [ ! -n "$git_where" ] && echo "%{$fg[red]%} %(?..[%?])"
 }
@@ -149,6 +150,6 @@ export LESS=-r
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
-bindkey '^[[A' history-substring-search-up			
+bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
