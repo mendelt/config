@@ -32,8 +32,11 @@ return require('packer').startup(function(use)
     use "saecki/crates.nvim"
 
     -- snippets
-    use 'L3MON4D3/LuaSnip'
-    use 'rafamadriz/friendly-snippets'
+    use "L3MON4D3/LuaSnip"
+    use "rafamadriz/friendly-snippets"
+
+    -- telescope
+    use "nvim-telescope/telescope.nvim"
 
     -- toggleterm
     use "akinsho/toggleterm.nvim"

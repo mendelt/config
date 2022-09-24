@@ -11,3 +11,9 @@ local term_opts = { silent = true }
 -- Nvim tree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
+-- telescope
+keymap("n", "<leader>ff", ":lua require('telescope.builtin').find_files()<cr>", opts)
+keymap("n", "<leader>fg", ":lua require('telescope.builtin').live_grep()<cr>", opts)
+keymap("n", "<leader>fb", ":lua require('telescope.builtin').buffers()<cr>", opts)
+keymap("n", "<leader>fh", ":lua require('telescope.builtin').help_tags()<cr>", opts)
+
