@@ -19,6 +19,7 @@ return require('packer').startup(function(use)
     use 'nvim-lualine/lualine.nvim'
     use "lukoshkin/trailing-whitespace"
     use "windwp/nvim-autopairs"
+    use "lewis6991/gitsigns.nvim"
 
     -- Color scheme
     use "savq/melange"
@@ -27,6 +28,7 @@ return require('packer').startup(function(use)
     use "williamboman/mason.nvim"
     use "williamboman/mason-lspconfig.nvim"
     use "neovim/nvim-lspconfig"
+    use "j-hui/fidget.nvim"
 
     -- File explorer
     use { 'kyazdani42/nvim-tree.lua', requires = { 'kyazdani42/nvim-web-devicons' } }

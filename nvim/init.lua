@@ -6,6 +6,7 @@ require "user.colorscheme"
 -- Per plugin config
 require "user.autopairs"
 require "user.cmp"
+require "user.gitsigns"
 require "user.lsp"
 require "user.lualine"
 require "user.nvim-tree"
