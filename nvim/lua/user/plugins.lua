@@ -20,6 +20,7 @@ return require('packer').startup(function(use)
     use "lukoshkin/trailing-whitespace"
     use "windwp/nvim-autopairs"
     use "lewis6991/gitsigns.nvim"
+    use "numToStr/Comment.nvim"
 
     -- Color scheme
     use "savq/melange"
