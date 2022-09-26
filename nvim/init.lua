@@ -4,6 +4,7 @@ require "user.plugins"
 require "user.colorscheme"
 
 -- Per plugin config
+require "user.autopairs"
 require "user.cmp"
 require "user.lsp"
 require "user.lualine"
