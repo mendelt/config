@@ -24,12 +24,15 @@ return require('packer').startup(function(use)
 
     -- Color scheme
     use "savq/melange"
+    use "folke/tokyonight.nvim"
 
-    -- lsp
+    -- lsp and dap
     use "williamboman/mason.nvim"
     use "williamboman/mason-lspconfig.nvim"
     use "neovim/nvim-lspconfig"
+    use "mfussenegger/nvim-dap"
     use "j-hui/fidget.nvim"
+    use "simrat39/rust-tools.nvim"
 
     -- File explorer
     use { 'kyazdani42/nvim-tree.lua', requires = { 'kyazdani42/nvim-web-devicons' } }

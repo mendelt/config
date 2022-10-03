@@ -42,9 +42,14 @@ local lsp_flags = {
   debounce_text_changes = 150,
 }
 
-lspconfig["rust_analyzer"].setup {
-    on_attach = on_attach,
-    flags = lsp_flags,
-}
+-- lspconfig["rust_analyzer"].setup {
+--     on_attach = on_attach,
+--     flags = lsp_flags,
+-- }
 
+require("rust-tools").setup({
+    server = {
+        on_attach = on_attach,
+    }
+})
 require("fidget").setup({})

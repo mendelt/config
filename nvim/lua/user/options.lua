@@ -26,8 +26,9 @@ vim.opt.number = true
 vim.opt.relativenumber = false
 vim.opt.signcolumn = "yes"
 vim.opt.wrap = false
--- vim.opt.scrolloff = 8
--- vim.opt.sidescrolloff = 8
+vim.opt.laststatus = 2
+vim.opt.scrolloff = 8
+vim.opt.sidescrolloff = 8
 
 vim.diagnostic.config({
     virtual_text = true,
