@@ -18,7 +18,7 @@ return require('packer').startup(function(use)
     use "nvim-lua/plenary.nvim"
     use 'nvim-lualine/lualine.nvim'
     use "lukoshkin/trailing-whitespace"
-    use "windwp/nvim-autopairs"
+    -- use "windwp/nvim-autopairs"
     use "lewis6991/gitsigns.nvim"
     use "numToStr/Comment.nvim"
 
