@@ -1,3 +1,3 @@
-vim.cmd "colorscheme tokyonight-moon"
+vim.cmd "colorscheme tokyonight-storm"
 
 require("trailing-whitespace").setup({})
