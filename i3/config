@@ -7,12 +7,14 @@ focus_follows_mouse no
 
 #          === General layout ====
 
-hide_edge_borders none
+hide_edge_borders smart
 font pango:Terminus 11
 default_border pixel 1
 default_floating_border normal
 hide_edge_borders smart_no_gaps
-
+default_border pixel 1
+default_floating_border pixel 1
+for_window [class="^.*"] border pixel 1
 
 #          === Execute on startup ===
 
