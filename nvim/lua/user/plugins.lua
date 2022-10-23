@@ -17,13 +17,12 @@ return require('packer').startup(function(use)
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use "nvim-lua/plenary.nvim"
     use 'nvim-lualine/lualine.nvim'
-    use "lukoshkin/trailing-whitespace"
+    -- use "lukoshkin/trailing-whitespace"
     -- use "windwp/nvim-autopairs"
     use "lewis6991/gitsigns.nvim"
     use "numToStr/Comment.nvim"
 
     -- Color scheme
-    use "savq/melange"
     use "folke/tokyonight.nvim"
 
     -- lsp and dap
