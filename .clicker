@@ -1,7 +1,0 @@
-
-
-[templates.git]
-destination = "~/test"
-
-[templates.tmux]
-destination = "~/test"
