@@ -5,49 +5,54 @@ animation = "EaseOutExpo"
 color = "0x662222"
 duration = 40
 
-# Colors (Ayu Dark)
+# Colors (Tokyo Night)
+# Source https//github.com/zatchheems/tokyo-night-alacritty-theme
+
+# Default colors
 [colors.primary]
-background = '#0A0E14'
-foreground = '#B3B1AD'
+background = '#1a1b26'
+foreground = '#a9b1d6'
 
+# Normal colors
 [colors.normal]
-black   = '#01060E'
-red     = '#EA6C73'
-green   = '#91B362'
-yellow  = '#F9AF4F'
-blue    = '#53BDFA'
-magenta = '#FAE994'
-cyan    = '#90E1C6'
-white   = '#C7C7C7'
+black   = '#32344a'
+red     = '#f7768e'
+green   = '#9ece6a'
+yellow  = '#e0af68'
+blue    = '#7aa2f7'
+magenta = '#ad8ee6'
+cyan    = '#449dab'
+white   = '#787c99'
 
+# Bright colors
 [colors.bright]
-black   = '#686868'
-red     = '#F07178'
-green   = '#C2D94C'
-yellow  = '#FFB454'
-blue    = '#59C2FF'
-magenta = '#FFEE99'
-cyan    = '#95E6CB'
-white   = '#FFFFFF'
+black   = '#444b6a'
+red     = '#ff7a93'
+green   = '#b9f27c'
+yellow  = '#ff9e64'
+blue    = '#7da6ff'
+magenta = '#bb9af7'
+cyan    = '#0db9d7'
+white   = '#acb0d0'
 
 [cursor]
 style = "Block"
 unfocused_hollow = true
 
 [font.bold]
-family = "Hack Nerd Font"
+family = "Hack Nerd Font Mono"
 style = "bold"
 
 [font.bold_italic]
-family = "Hack Nerd Font"
+family = "Hack Nerd Font Mono"
 style = "bold italic"
 
 [font.italic]
-family = "Hack Nerd Font"
+family = "Hack Nerd Font Mono"
 style = "italic"
 
 [font.normal]
-family = "Hack Nerd Font"
+family = "Hack Nerd Font Propo"
 style = "regular"
 
 [mouse]
