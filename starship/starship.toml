@@ -1,0 +1,62 @@
+format = """
+[ ](bg:bright-blue)$directory\
+[\uE0C7 ](bg:bright-blue fg:purple)[\uE0C6 ](fg:bright-blue bg:purple)\
+$package\
+[\uE0C7 ](bg:purple fg:black)[\uE0C6  ](fg:purple bg:black)\
+$cmd_duration\
+[\uE0C6  ](fg:black)\
+$fill\
+$git_commit\
+$git_branch\
+$git_metrics\
+$git_status\
+$git_state\
+$time
+$character"""
+
+continuation_prompt = "▶▶ "
+
+[cmd_duration]
+format = "[$duration ]($style)"
+style = "fg:purple bg:black"
+min_time = 0
+show_milliseconds = true
+show_notifications = true
+
+[directory]
+format = "[$path]($style)[$read_only]($read_only_style)"
+read_only = " 󰌾"
+style = "fg:black bg:bright-blue"
+read_only_style = "fg:black bg:bright-blue"
+fish_style_pwd_dir_length = 2
+
+[docker_context]
+symbol = " "
+
+[fill]
+symbol = " "
+style = "(fg:black bg:black)"
+
+[git_branch]
+symbol = " "
+
+[git_metrics]
+disabled = false
+
+[git_commit]
+only_detached = false
+tag_disabled = false
+
+[nim]
+symbol = "󰆥 "
+
+[nix_shell]
+symbol = " "
+
+[package]
+format = "[$symbol $version]($style)"
+symbol = "󰏗"
+style = "fg:black bg:purple"
+
+[time]
+disabled = false
