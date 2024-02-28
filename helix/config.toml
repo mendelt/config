@@ -1,0 +1,23 @@
+theme = "tokyo-night"
+
+[editor]
+line-number = "relative"
+cursorline = true
+rulers = [120]
+true-color = true
+color-modes = true
+bufferline = "multiple"
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.indent-guides]
+character = "╎"
+render = true
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.file-picker]
+hidden = false
