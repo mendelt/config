@@ -10,7 +10,7 @@ duration = 40
 
 # Default colors
 [colors.primary]
-background = '#1a1b26'
+background = '#080813'
 foreground = '#a9b1d6'
 
 # Normal colors
