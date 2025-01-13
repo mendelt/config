@@ -1,3 +1,4 @@
+[general]
 live_config_reload = true
 
 [bell]
@@ -66,9 +67,11 @@ multiplier = 3
 save_to_clipboard = false
 semantic_escape_chars = ",│`|:\"' ()[]{}<>"
 
-[shell]
+[terminal.shell]
 program = "tmux"
 
 [window.padding]
 x = 4
 y = 4
+
+[terminal]
