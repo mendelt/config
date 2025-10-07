@@ -25,8 +25,12 @@ exec --no-startup-id blueman-applet
 
 # Not sure what these are for
 # exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-# exec --no-startup-id nitrogen --restore; sleep 1; compton -b
-# exec --no-startup-id xfce4-power-manager
+
+# Set desktop background
+exec --no-startup-id nitrogen --restore; sleep 1; compton -b
+
+# Power management
+exec --no-startup-id xfce4-power-manager
 
 # See if I miss these
 # exec --no-startup-id pamac-tray
