@@ -1,12 +1,6 @@
-# config
-
-
-
-
-
+# Config
 
 ## Install packages
-
 
 ### Apt
 build-essential
@@ -17,3 +11,4 @@ zsh
 tmux
 sway sway-backgrounds
 stow
+zoxide
