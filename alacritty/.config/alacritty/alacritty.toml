@@ -41,19 +41,19 @@ style = "Block"
 unfocused_hollow = true
 
 [font.bold]
-family = "Hack Nerd Font Mono"
+family = "Hack Nerd Font"
 style = "bold"
 
 [font.bold_italic]
-family = "Hack Nerd Font Mono"
+family = "Hack Nerd Font"
 style = "bold italic"
 
 [font.italic]
-family = "Hack Nerd Font Mono"
+family = "Hack Nerd Font"
 style = "italic"
 
 [font.normal]
-family = "Hack Nerd Font Propo"
+family = "Hack Nerd Font"
 style = "regular"
 
 [mouse]
