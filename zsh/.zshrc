@@ -69,6 +69,20 @@ autoload -U compinit colors zcalc
 compinit -d
 colors
 
+# Simple prompt
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:*' get-revision true
+zstyle ':vcs_info:git*' formats "%F{yellow}%r %F{blue}%b %F{green}%8.8i %F{red}%m%u%c%{$reset_color%} "
+precmd() {
+    vcs_info
+}
+setopt prompt_subst
+NEWLINE=$'\n'
+RPROMPT='%{$fg[yellow]%}${vcs_info_msg_0_}${vcs_info_msg_1_} '
+PROMPT='${NEWLINE}%{$fg[blue]%}%d${NEWLINE}%{$fg[green]%}>%{$reset_color%} '
+
 # Color man pages
 export LESS_TERMCAP_mb=$'\E[01;32m'
 export LESS_TERMCAP_md=$'\E[01;32m'
@@ -88,8 +102,6 @@ bindkey '^[[B' history-substring-search-down
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-eval "$(starship init zsh)"
 
 autoload -U compinit; compinit
 
