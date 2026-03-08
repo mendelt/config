@@ -105,6 +105,8 @@ export NVM_DIR="$HOME/.nvm"
 
 autoload -U compinit; compinit
 
+eval "$(zoxide init zsh)"
+
 # Plugins
 source $HOME/.config/zsh/antigen.zsh
 
