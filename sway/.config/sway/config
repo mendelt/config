@@ -59,6 +59,9 @@ hide_edge_borders smart
 # Start a terminal
 bindsym $mod+Return exec $term
 
+# Open file explorer
+bindsym $mod+e exec thunar
+
 # Kill focused window
 bindsym $mod+q kill
 
@@ -118,6 +121,7 @@ bindsym $mod+7 workspace number 7
 bindsym $mod+8 workspace number 8
 bindsym $mod+9 workspace number 9
 bindsym $mod+0 workspace number 10
+
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number 1
 bindsym $mod+Shift+2 move container to workspace number 2
@@ -141,9 +145,9 @@ bindsym $mod+b splith
 bindsym $mod+v splitv
 
 # Switch the current container between different layout styles
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+# bindsym $mod+s layout stacking
+# bindsym $mod+w layout tabbed
+# bindsym $mod+e layout toggle split
 
 # Make the current focus fullscreen
 bindsym $mod+f fullscreen
@@ -227,5 +231,7 @@ bindsym $mod+r mode "resize"
 # }
 
 bar swaybar_command waybar
+
+output * bg /home/user/.local/share/sway/backgrounds/wallpaper2.jpg fill
 
 include /etc/sway/config.d/*
