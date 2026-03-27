@@ -2,47 +2,38 @@
 {
     // "layer": "top", // Waybar at top layer
     "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 20, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
-    "spacing": 0, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
         "sway/workspaces",
         "sway/mode",
         "sway/scratchpad",
+        "sway/window"
     ],
-    "modules-center": [],
+    "modules-center": [
+        "clock"
+    ],
     "modules-right": [
         // "idle_inhibitor",
+        "keyboard-state",
         "pulseaudio",
         "network",
         // "power-profiles-daemon",
         "cpu",
         "memory",
-        // "temperature",
+        "temperature",
         // "backlight",
         // "battery",
         // "battery#bat2",
-        "clock",
         "tray"
     ],
     // Modules configuration
     "sway/workspaces": {
         "disable-scroll": true,
         "all-outputs": false,
-        "warp-on-scroll": false,
-    },
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
+        "warp-on-scroll": false
     },
     "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
+        "format": " {}"
     },
     "sway/scratchpad": {
         "format": "{icon} {count}",
@@ -63,32 +54,45 @@
     },
     "tray": {
         // "icon-size": 21,
-        "spacing": 0
         // "icons": {
         //   "blueman": "bluetooth",
         //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
         // }
     },
     "clock": {
-        // "timezone": "America/New_York",
-        "tooltip-format": "<tt><big>{calendar}</big></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "interval": 1,
+        "format": "{:%Y-%m-%d %H:%M:%S}",
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+            "mode": "year",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#acb0d0'><b>{}</b></span>",
+                "days": "<span color='#787c99'><b>{}</b></span>",
+                "weeks": "<span color='#7da6ff'><b>{}</b></span>",
+                "weekdays": "<span color='#e0af68'><b>{}</b></span>",
+                "today": "<span color='#ff6699'><b>{}</b></span>"
+            }
+        }
     },
     "cpu": {
-        "format": "{usage}% ",
+        "interval": 1,
+        "format": " {usage}%",
         "tooltip": false
     },
     "memory": {
-        "format": "{}% "
+        "interval": 1,
+        "format": " {used}GiB/{avail}GiB",
+        "tooltip": false
     },
-    // "temperature": {
-    //     // "thermal-zone": 2,
-    //     // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-    //     "critical-threshold": 80,
-    //     // "format-critical": "{temperatureC}°C {icon}",
-    //     "format": "{temperatureC}°C {icon}",
-    //     "format-icons": ["", "", ""]
-    // },
+    "temperature": {
+        "hwmon-path": "/sys/class/hwmon/hwmon2/temp3_input",
+        "warning-threshold": 70,
+        "critical-threshold": 80,
+        "format": "\uf2cb {temperatureC}°C"
+    },
     // "backlight": {
     //     // "device": "acpi_video1",
     //     "format": "{percent}% {icon}",
@@ -124,7 +128,6 @@
     //   }
     // },
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{ifname}: {essid} ({signalStrength}%)",
         "format-ethernet": "{ifname}: {ipaddr}/{cidr}",
         "tooltip-format": "{ifname} via {gwaddr}",
