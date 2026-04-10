@@ -10,7 +10,7 @@ curl
 
 zsh
 tmux
-sway sway-backgrounds
+sway
 waybar
 stow
 zoxide
