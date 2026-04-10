@@ -217,3 +217,9 @@ bar swaybar_command waybar
 output * bg /home/user/.local/share/sway/backgrounds/wallpaper2.jpg fill
 
 include /etc/sway/config.d/*
+
+input "type:touchpad" {
+    dwt enabled
+    tap enabled
+    middle_emulation enabled
+}
