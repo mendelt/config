@@ -81,7 +81,7 @@ precmd() {
 setopt prompt_subst
 NEWLINE=$'\n'
 RPROMPT='%{$fg[yellow]%}${vcs_info_msg_0_}${vcs_info_msg_1_} '
-PROMPT='${NEWLINE}%{$fg[blue]%}%d${NEWLINE}%{$fg[green]%}>%{$reset_color%} '
+PROMPT='${NEWLINE}%{$fg[blue]%}%~${NEWLINE}%{$fg[green]%}>%{$reset_color%} '
 
 # Color man pages
 export LESS_TERMCAP_mb=$'\E[01;32m'
