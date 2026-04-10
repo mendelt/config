@@ -6,6 +6,7 @@
 build-essential
 git gitk git-gui
 snapd
+curl
 
 zsh
 tmux
@@ -14,4 +15,6 @@ waybar
 stow
 zoxide
 
-thunar thunar-archive-plugin tunar-font-manager thunar-data thunar-vcs-plugin thunar-volman
+thunar thunar-archive-plugin thunar-font-manager thunar-media-tags-plugin thunar-data thunar-vcs-plugin thunar-volman
+
+nwg-displays
