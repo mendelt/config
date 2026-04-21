@@ -9,6 +9,7 @@ libssl-dev
 git gitk git-gui
 snapd
 curl
+ripgrep fd-find
 
 zsh
 tmux
@@ -29,7 +30,6 @@ Hack
 Inconsolata
 SpaceMono
 UbuntuSans
-
 
 ### Rustup
 
