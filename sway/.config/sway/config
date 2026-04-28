@@ -7,6 +7,10 @@ include ~/.config/sway/workspaces
 
 ### Overall behavior
 
+# Start applets and utils
+exec blueman-applet
+exec swaync
+
 # Use waybar
 bar swaybar_command waybar
 
