@@ -10,6 +10,10 @@ include ~/.config/sway/workspaces
 # Start applets and utils
 exec blueman-applet
 exec swaync
+exec swayidle -w \
+    timeout 120 'swaylock' \
+    timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+    before-sleep 'swaylock'
 
 # Use waybar
 bar swaybar_command waybar
@@ -197,16 +201,3 @@ input "type:touchpad" {
 floating_modifier $mod normal
 
 focus_follows_mouse no
-
-### Idle configuration
-#
-# Example configuration:
-#
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.

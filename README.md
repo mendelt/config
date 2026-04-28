@@ -18,7 +18,7 @@ zoxide
 
 thunar thunar-archive-plugin thunar-font-manager thunar-media-tags-plugin thunar-data thunar-vcs-plugin thunar-volman
 
-sway waybar swaylock sway-notification-center nwg-displays
+sway waybar swaylock swayidle sway-notification-center nwg-displays blueman
 
 ### Snaps
 alacritty
