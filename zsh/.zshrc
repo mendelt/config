@@ -29,6 +29,16 @@ export EDITOR=nvim
 
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
 
+# Plugins
+source $HOME/.config/zsh/antigen.zsh
+
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-history-substring-search
+
+antigen apply
+
 ## Keybindings section
 bindkey -e
 bindkey -v
@@ -106,13 +116,4 @@ export NVM_DIR="$HOME/.nvm"
 autoload -U compinit; compinit
 
 eval "$(zoxide init zsh)"
-
-# Plugins
-source $HOME/.config/zsh/antigen.zsh
-
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-history-substring-search
-antigen bundle zsh-users/zsh-autosuggestions
-
-antigen apply
 
