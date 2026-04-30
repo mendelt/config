@@ -1,6 +1,6 @@
 // -*- mode: jsonc -*-
 {
-    // "layer": "top", // Waybar at top layer
+    "layer": "top", // Waybar at top layer
     "position": "bottom", // Waybar position (top|bottom|left|right)
     // Choose the order of the modules
     "modules-left": [
@@ -12,17 +12,15 @@
         "clock"
     ],
     "modules-right": [
-        // "idle_inhibitor",
+        "idle_inhibitor",
         "keyboard-state",
         "pulseaudio",
         "network",
-        // "power-profiles-daemon",
         "cpu",
         "memory",
         "temperature",
-        // "backlight",
+        "backlight",
         "battery",
-        // "battery#bat2",
         "tray"
     ],
     // Modules configuration
@@ -44,19 +42,11 @@
         "tooltip": true,
         "tooltip-format": "{app}: {title}"
     },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
     "tray": {
-        // "icon-size": 21,
-        // "icons": {
-        //   "blueman": "bluetooth",
-        //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
-        // }
+        "icon-size": 21,
+        "icons": {
+            "blueman": "bluetooth"
+        }
     },
     "clock": {
         "interval": 1,
@@ -92,22 +82,32 @@
         "critical-threshold": 80,
         "format": "\uf2cb {temperatureC}°C"
     },
-    // "backlight": {
-    //     // "device": "acpi_video1",
-    //     "format": "{percent}% {icon}",
-    //     "format-icons": ["", "", "", "", "", "", "", "", ""]
-    // },
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{icon} {percent}%",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
     "battery": {
         "states": {
             // "good": 95,
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
+        "format": "{icon} {capacity}%",
+        "format-full": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        // "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": [
@@ -118,9 +118,6 @@
             ""
         ]
     },
-    // "battery#bat2": {
-    //     "bat": "BAT2"
-    // },
     // "power-profiles-daemon": {
     //   "format": "{icon}",
     //   "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
